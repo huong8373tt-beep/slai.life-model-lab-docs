@@ -8,7 +8,7 @@ This repository publishes experiment records, engineering milestones, and resear
 
 ## Current context
 
-At today's personal-compute budget, Slai Agent Runtime relies primarily on cloud-model APIs for its main engineering work. Model Lab is a parallel, forward-looking effort: as personal compute, hardware efficiency, and model availability improve, individuals should be able to train, operate, and evaluate more of their own models.
+At today's personal-compute budget, Slai Agent Runtime relies primarily on cloud-model APIs for its main engineering work. Model Lab is the paired, forward-looking effort: as personal compute, hardware efficiency, and accessible models improve, individuals should be able to train, operate, and evaluate more of their own models. The work builds the training, recovery, and evaluation foundation ahead of that future.
 
 The Runtime and the Lab have different roles:
 
