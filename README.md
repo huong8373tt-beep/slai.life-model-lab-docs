@@ -2,7 +2,7 @@
 
 Slai Model Lab is a private, multi-track model-training, live-model-runtime, and experimentation system that accompanies [Slai Agent Runtime](https://github.com/huong8373tt-beep/slai.life).
 
-It covers text, speech, image, video, multimodal, and homegrown-model work. The Lab includes low-VRAM full-parameter training, NF4 resident-training experiments, short-term QLoRA adaptation, long-running checkpoint and resume workflows, live model-runtime work, and candidate-model evaluation.
+It covers text, speech, image, video, multimodal, and homegrown-model work. The Lab includes low-VRAM full-parameter training, NF4 resident-training experiments, live QLoRA adaptation for fast short-term memory, long-running checkpoint and resume workflows, live model-runtime work, and candidate-model evaluation.
 
 This repository publishes experiment records, engineering milestones, and research direction. Core training code, private data, weights, prompts, machine configuration, and internal operating methods remain private.
 
@@ -67,7 +67,7 @@ selected private experience
 → promote for later use or roll back
 ```
 
-**QLoRA** is supported as a fast, short-term adaptation path: a small adapter can change behavior quickly without treating every interaction as a permanent base-model update.
+**Live QLoRA** is supported as a fast, short-term memory and adaptation path: selected feedback can be applied through a small adapter and evaluated while the live Slai system continues to run, without treating every interaction as a permanent base-model update.
 
 The recorded **NF4 resident** routes are a different path. They are not LoRA or QLoRA adapter-only tuning that freezes the base model and trains only a small adapter. They use train-time weight compression under constrained VRAM while keeping the main model parameters in the training path. This is intended as longer-term weight internalization, and it requires separate quality, regression, and stability checks before a candidate is used.
 
