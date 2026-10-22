@@ -20,18 +20,21 @@ Slai Model Lab
 → studies private training, model operation, recovery, and candidate-model evaluation
 ```
 
-Over time, the intended relationship is:
+## From real work to model improvement
+
+Slai Agent Runtime currently uses capable cloud API models to work in real software, device, and service environments. That work produces reviewable experience: task results, feedback, reusable material, successful paths, failures, and evidence.
+
+Model Lab explores how Slai Agent Runtime can use controlled selection and evaluation methods to identify suitable private training material from that experience, operate training workflows, and assist with evaluating, training, and verifying candidate models.
 
 ```text
-real task experience from the Runtime
-→ selection and review
-→ private training material
-→ training and candidate models
+real-world Runtime work
+→ reviewable experience and selected material
+→ private training and candidate models
 → evaluation and regression checks
-→ validated capability available to later Runtime work
+→ validated capability for later Runtime work, or rollback
 ```
 
-The Runtime does not require self-trained models in order to work, and not every conversation, log, or tool result is automatically used for training.
+This is a controlled improvement loop, not automatic training on every conversation, log, or tool result. The Runtime does not require self-trained models in order to work; training material and candidate capabilities must be selected and validated before use.
 
 ## Recorded experiment lines
 
